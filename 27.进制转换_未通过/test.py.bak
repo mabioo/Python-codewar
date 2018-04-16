@@ -1,0 +1,25 @@
+def convert(input, source, target):
+    j = 0
+    dec_value = 0
+    print ("intput:",input)
+    print ("souce:",source)
+    print ("target:",target)
+    for i in range(len(input)-1,-1,-1):
+		    values = ord(input[i]) - ord(source[0])
+        dec_value = dec_value + values*(len(source)**j)
+		    j +=1
+    print ("dec_value:",dec_value)
+
+    result = ""
+    re = dec_value
+    se = dec_value
+    while   re > len(target]:
+    	re = dec_value/len(target)
+    	se = dec_value%len(target)
+    	result += target[re]
+    result += target[se]
+    print (result)
+    return result
+
+if __name__ == "__main__":
+	convert("89", "0123456789", "01")	
